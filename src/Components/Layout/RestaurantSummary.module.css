@@ -1,0 +1,13 @@
+.frame{
+    position: absolute;
+    top:240px;
+    left:400px;
+    background-color: rgb(59, 56, 56);
+    box-shadow: 0 3px 16px 5px black;
+    border-radius: 14px;
+    height: 240px;
+    width:740px;
+    text-align:center;
+    padding: 10px 20px;
+    color: white;
+}
