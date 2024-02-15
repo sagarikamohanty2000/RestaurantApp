@@ -1,0 +1,12 @@
+.frame{
+    position:relative;
+    top:100px;
+    left: 265px;
+    width:1000px;
+    
+    height: auto;
+}
+
+ul{
+    list-style:none;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Header.module.css";
 import ModalImg from "../../Asserts/meals.jpg";
 import HeaderCart from "./HeaderCart";
-import RestaurantSmmary from "./RestaurantSummary";
+import RestaurantSmmary from "../Resturant/RestaurantSummary";
 
 const Header = (props) => {
   return (
