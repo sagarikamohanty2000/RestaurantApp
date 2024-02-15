@@ -1,7 +1,7 @@
 import React from "react";
-import classes from './RestaurantDisplay.module.css';
+import classes from "./RestaurantMealDisplay.module.css";
 
-const RestaurantDisplay = (props) => {
+const RestaurantMealDisplay = (props) => {
   return (
     <li className={classes["list-frame"]}>
       <div className={classes["dish-name"]}>{props.details.name}</div>
@@ -11,4 +11,4 @@ const RestaurantDisplay = (props) => {
   );
 };
 
-export default RestaurantDisplay;
+export default RestaurantMealDisplay;
