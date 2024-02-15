@@ -12,9 +12,11 @@ const CartCheckout = () => {
     return (
       <Card className={classes["cart-frame"]}>
         <h4 className={classes["meal-title"]}>Sushi</h4>
-         <p className={classes["content-body"]}>Total Amount <div className = {classes.amount}> 35.62</div></p>
-         
-                <button type="button" className={classes.btnClose}>
+        <p className={classes["content-body"]}>
+          Total Amount <div className={classes.amount}> 35.62</div>
+        </p>
+
+        <button type="button" className={classes.btnClose}>
           Close
         </button>
         <button type="button" className={classes.btnOrder}>

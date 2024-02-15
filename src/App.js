@@ -5,15 +5,13 @@ import CartCheckout from "./Components/Cart/CartCheckout";
 function App() {
   return (
     <React.Fragment>
+      <CartCheckout></CartCheckout>
       <div>
-       <CartCheckout></CartCheckout>
-     
         <Header />
       </div>
       <main>
         <RestaurantMealList></RestaurantMealList>
       </main>
-
     </React.Fragment>
   );
 }
