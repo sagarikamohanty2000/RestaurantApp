@@ -1,0 +1,23 @@
+#amountLabel {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#amount {
+  margin-left: 20px;
+  width: 48px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px rgb(127, 127, 127) solid;
+}
+
+#Addbtn {
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: rgb(111, 0, 0);
+  border-radius: 20px;
+  padding: 0.3rem 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
