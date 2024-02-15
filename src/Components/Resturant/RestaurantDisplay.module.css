@@ -1,0 +1,21 @@
+.list-frame {
+  padding-top: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-right: 2.5rem;
+}
+
+.dish-name {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.des {
+    font-style: italic;
+}
+
+.price {
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(155, 41, 0);
+  margin-bottom: 1.5rem;
+}
