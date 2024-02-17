@@ -2,9 +2,13 @@ import classes from "./HeaderCart.module.css";
 import React from "react";
 import CartIcon from "../Cart/CartIcon";
 
-const HeaderCart = () => {
+const HeaderCart = (props) => {
+  
+const handleCart = () => {
+props.onClickCart(true);
+}
   return (
-    <button className = {classes.button}>
+    <button className = {classes.button} onClick={handleCart}>
       <span className={classes.cartIcon}>
         <CartIcon />
       </span>
