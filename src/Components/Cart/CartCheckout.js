@@ -3,28 +3,30 @@ import ReactDOM from "react-dom";
 import Card from "../UI/Card";
 import classes from "./CartCheckout.module.css";
 
-const CartCheckout = () => {
+const CartCheckout = (props) => {
+  const handleCloseBtn = () => {
+    props.onShowCart(false);
+  }
   const Backdrop = () => {
     return <div className={classes.backdrop}></div>;
   };
 
   const Layout = () => {
-    return (
+  return (
       <Card className={classes["cart-frame"]}>
         <h4 className={classes["meal-title"]}>Sushi</h4>
-        <p className={classes["content-body"]}>
+        <span className={classes["content-body"]}>
           Total Amount <div className={classes.amount}> 35.62</div>
-        </p>
-
-        <button type="button" className={classes.btnClose}>
+        </span>
+        <button type="button" className={classes.btnClose} onClick={handleCloseBtn}>
           Close
         </button>
         <button type="button" className={classes.btnOrder}>
           Order
         </button>
       </Card>
-    );
-  };
+  );
+};
 
   return (
     <React.Fragment>
