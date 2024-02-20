@@ -6,19 +6,30 @@ import classes from "./CartCheckout.module.css";
 import CartModalItem from "./CartModalItem";
 const CartCheckout = (props) => {
   const cartContext = useContext(CartContext);
-  
-  const totalAmt = cartContext.totalAmount;
-  
+
+  const totalAmt = cartContext.totalAmount.toFixed(2);
+
+  const removeCartItem = (id) => {
+    cartContext.removeItem(id);
+  };
+
+  const addCartItem = (item) => {
+    cartContext.addItem({...item,amount: 1});
+  };
+
   const cartItem = (
-   <ul className={classes.itemDetails}>
-    {cartContext.items.map((item) => (
-      <CartModalItem
-        name={item.name}
-        price={item.price}
-        amount={item.amount}
-      ></CartModalItem>
-    ))}
-  </ul>
+    <ul className={classes.itemDetails}>
+      {cartContext.items.map((item) => (
+        <CartModalItem
+          key={item.id}
+          name={item.name}
+          price={item.price}
+          amount={item.amount}
+          onRemove={removeCartItem.bind(null, item.id)}
+          onAdd={addCartItem.bind(null, item)}
+        ></CartModalItem>
+      ))}
+    </ul>
   );
 
   const handleCloseBtn = () => {

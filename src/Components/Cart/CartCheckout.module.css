@@ -12,7 +12,7 @@
   top: 180px;
   left: 28%;
   width: 670px;
-  height: 350px;
+  height: auto;
   z-index: 12;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -48,6 +48,7 @@
   color: rgb(111, 0, 0);
   margin-left: 420px;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .btnClose:hover,
@@ -64,4 +65,5 @@
   border: 1px rgb(111, 0, 0) solid;
   color: white;
   margin-left: 10px;
+  margin-bottom: 2rem;
 }

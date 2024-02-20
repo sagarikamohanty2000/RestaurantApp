@@ -13,7 +13,6 @@ const RestaurantMealDisplay = (props) => {
       price: props.details.price,
       amount: amount,
     };
-    console.log('In MEAL LIST',item);
     cartContext.addItem(item);
   };
 

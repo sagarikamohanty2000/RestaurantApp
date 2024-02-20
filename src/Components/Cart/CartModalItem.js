@@ -15,8 +15,8 @@ const CartModalItem = (props) => {
           </div>
         </div>
         <div className={classes.btn}>
-          <button type="button" className={classes.btnReduce}>-</button>
-          <button type="button" className={classes.btnAdd}>+</button>
+          <button type="button" className={classes.btnReduce} onClick={props.onRemove}>-</button>
+          <button type="button" className={classes.btnAdd} onClick={props.onAdd}>+</button>
         </div>
       </div>
       </div>

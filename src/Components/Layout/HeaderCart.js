@@ -4,12 +4,10 @@ import CartIcon from "../Cart/CartIcon";
 import CartContext from "../../Store/CartContext";
 
 const HeaderCart = (props) => {
-
   const cartContext = useContext(CartContext);
-  console.log('cartContext Item',cartContext.items);
 
   const totalAmount = cartContext.items.reduce((curValue, item) => {
-    return curValue + Number (item.amount);
+    return curValue + Number(item.amount)
   }, 0);
 
   const handleCart = () => {
